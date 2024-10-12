@@ -1,0 +1,46 @@
+﻿@model IEnumerable<Inventario.Models.Cliente>
+@{
+    ViewData["Title"] = "Lista de clientes";
+}
+<h1>Clientes</h1>
+<p>
+    <a class="btn btn-success" asp-action="Create"> <i class="bi bi-plus"></i> Crear nuevo cliente</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th style="width:10%">Acciones</th>
+            <th class="text-center">
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CorreoElectronico)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Telefono)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <a class="bi bi-eye-fill text-dark" asp-action="Details" asp-route-id="@item.ClienteId"></a>
+                    <a class="bi bi-pencil-fill text-warning" asp-action="Edit" asp-route-id="@item.ClienteId"></a>
+                    <a class="bi bi-trash-fill text-danger" asp-action="Delete" asp-route-id="@item.ClienteId"></a>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nombre)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CorreoElectronico)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Telefono)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

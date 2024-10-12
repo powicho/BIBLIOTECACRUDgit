@@ -1,0 +1,40 @@
+﻿@model IEnumerable<Inventario.Models.Pedido>
+@{
+    ViewData["Title"] = "Lista de pedidos";
+}
+<h1>Pedidos</h1>
+<p>
+    <a class="btn btn-success" asp-action="Create"> <i class="bi bi-plus"></i> Crear nuevo pedido</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th style="width:10%">Acciones</th>
+            <th class="text-center">
+                @Html.DisplayNameFor(model => model.Descripcion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaPedido)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <a class="bi bi-eye-fill text-dark" asp-action="Details" asp-route-id="@item.PedidoId"></a>
+                    <a class="bi bi-pencil-fill text-warning" asp-action="Edit" asp-route-id="@item.PedidoId"></a>
+                    <a class="bi bi-trash-fill text-danger" asp-action="Delete" asp-route-id="@item.PedidoId"></a>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Descripcion)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FechaPedido)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

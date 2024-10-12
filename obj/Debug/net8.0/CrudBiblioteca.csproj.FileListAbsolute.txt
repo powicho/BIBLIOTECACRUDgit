@@ -1,0 +1,8 @@
+D:\PrograSemestre4\C#_MVC\INVENTARIO\obj\Debug\net8.0\CrudBiblioteca.csproj.AssemblyReference.cache
+D:\PrograSemestre4\C#_MVC\INVENTARIO\obj\Debug\net8.0\CrudBiblioteca.GeneratedMSBuildEditorConfig.editorconfig
+D:\PrograSemestre4\C#_MVC\INVENTARIO\obj\Debug\net8.0\CrudBiblioteca.AssemblyInfoInputs.cache
+D:\PrograSemestre4\C#_MVC\INVENTARIO\obj\Debug\net8.0\CrudBiblioteca.AssemblyInfo.cs
+D:\PrograSemestre4\C#_MVC\INVENTARIO\obj\Debug\net8.0\CrudBiblioteca.csproj.CoreCompileInputs.cache
+D:\PrograSemestre4\C#_MVC\INVENTARIO\obj\Debug\net8.0\CrudBiblioteca.MvcApplicationPartsAssemblyInfo.cache
+D:\PrograSemestre4\C#_MVC\INVENTARIO\obj\Debug\net8.0\CrudBiblioteca.RazorAssemblyInfo.cache
+D:\PrograSemestre4\C#_MVC\INVENTARIO\obj\Debug\net8.0\CrudBiblioteca.RazorAssemblyInfo.cs
